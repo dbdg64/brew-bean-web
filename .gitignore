@@ -1,0 +1,4 @@
+# Local copies and tooling artifacts, not part of the site
+site/
+*.zip
+.impeccable/

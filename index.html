@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Brew & Bean is a cozy neighborhood cafe near City College. Fresh coffee, chai, food and desserts at friendly prices. Open daily 8 AM to 9 PM.">
+  <title>Brew & Bean - Freshly brewed happiness, every morning</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235C3D2E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 8h1a4 4 0 1 1 0 8h-1'/%3E%3Cpath d='M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=80&w=1200&auto=format&fit=crop" imagesrcset="https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=80&w=600&auto=format&fit=crop 600w, https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=80&w=1200&auto=format&fit=crop 1200w, https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=80&w=2000&auto=format&fit=crop 2000w" imagesizes="100vw">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}.hero-bg img{opacity:.45!important}</style></noscript>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <svg class="icon icon-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+        Brew & Bean
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+      <nav class="nav" id="mainNav">
+        <a href="#about">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          About
+        </a>
+        <a href="#menu">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/></svg>
+          Menu
+        </a>
+        <a href="#reviews">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Reviews
+        </a>
+        <a href="#contact">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          Contact
+        </a>
+        <a href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener" class="nav-whatsapp">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          WhatsApp Us
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=80&w=1200&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=80&w=600&auto=format&fit=crop 600w, https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=80&w=1200&auto=format&fit=crop 1200w, https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=80&w=2000&auto=format&fit=crop 2000w" sizes="100vw" alt="" fetchpriority="high">
+    </div>
+    <div class="container hero-content reveal reveal-zoom">
+      <div class="hero-cup" aria-hidden="true">
+        <svg class="cup-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <line class="steam s1" x1="6" x2="6" y1="2" y2="4"/>
+          <line class="steam s2" x1="10" x2="10" y1="2" y2="4"/>
+          <line class="steam s3" x1="14" x2="14" y1="2" y2="4"/>
+          <g class="cup-body">
+            <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+          </g>
+        </svg>
+      </div>
+      <p class="hero-badge">Warm • Cozy • Affordable</p>
+      <h1>Freshly brewed happiness, every morning</h1>
+      <p class="hero-text">Your neighborhood spot to sip, study, work, and relax. Coffee, chai, fresh food and desserts made during the day, at friendly prices.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="#contact" class="btn btn-outline">Visit Us Today</a>
+      </div>
+      <p class="hero-info">
+        <span class="hero-info-item">
+          <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          123 Market Road, Near City College
+        </span>
+        <span class="hero-info-sep">|</span>
+        <span class="hero-info-item">
+          <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          8 AM - 9 PM Daily
+        </span>
+        <span class="hero-info-sep">|</span>
+        <span class="hero-info-item">
+          <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" x2="12.01" y1="20" y2="20"/></svg>
+          Free Wi-Fi
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="reveal">About Brew & Bean</h2>
+      <p class="section-subtitle reveal">A small cafe with a big, cozy heart.</p>
+
+      <div class="about-grid">
+        <div class="about-text reveal reveal-left">
+          <p>We started in <strong>2022</strong> as two college friends who loved coffee and chai. Today, we're a small neighborhood cafe where anyone can come in, sit down, and feel at home.</p>
+          <p>We make fresh food during the day, brew every cup to order, and keep our prices affordable and homey, no fancy stuff, just good vibes.</p>
+          <p>Students come here to study, young workers take a happy break, and families gather on weekends. Everyone is welcome.</p>
+
+          <ul class="services">
+            <li>
+              <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+              Dine-in
+            </li>
+            <li>
+              <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              Takeaway
+            </li>
+            <li>
+              <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" x2="12.01" y1="20" y2="20"/></svg>
+              Free Wi-Fi
+            </li>
+            <li>
+              <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              Study-friendly sitting
+            </li>
+            <li>
+              <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              WhatsApp order
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-card reveal reveal-right">
+          <div class="about-card-item">
+            <svg class="icon icon-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+            <span><strong>Coffee & Chai</strong><br>Freshly brewed</span>
+          </div>
+          <div class="about-card-item">
+            <i data-lucide="sandwich" class="icon icon-lg"></i>
+            <span><strong>Fresh Food</strong><br>Made during the day</span>
+          </div>
+          <div class="about-card-item">
+            <svg class="icon icon-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <span><strong>Study Friendly</strong><br>Wi-Fi + comfy seats</span>
+          </div>
+          <div class="about-card-item">
+            <svg class="icon icon-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span><strong>For Everyone</strong><small class="about-card-sub">Students, Workers, Families</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section section-alt" id="menu">
+    <div class="container">
+      <h2 class="reveal">Our Menu</h2>
+      <p class="section-subtitle reveal">Affordable, homey, and made fresh. Prices in USD.</p>
+
+      <div class="menu-grid">
+        <div class="menu-card reveal">
+          <h3>
+            <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+            Coffee & Chai
+          </h3>
+          <ul>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Masala%20Chai%20to%20go." target="_blank" rel="noopener" aria-label="Order Masala Chai on WhatsApp">Masala Chai</a> <span>$2</span></li>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Cappuccino%20to%20go." target="_blank" rel="noopener" aria-label="Order Cappuccino on WhatsApp">Cappuccino</a> <span>$3</span></li>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Cold%20Coffee%20to%20go." target="_blank" rel="noopener" aria-label="Order Cold Coffee on WhatsApp">Cold Coffee</a> <span>$3.5</span></li>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Hot%20Chocolate%20to%20go." target="_blank" rel="noopener" aria-label="Order Hot Chocolate on WhatsApp">Hot Chocolate</a> <span>$3.5</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <h3>
+            <i data-lucide="sandwich" class="icon icon-inline"></i>
+            Food
+          </h3>
+          <ul>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Grilled%20Cheese%20Sandwich%20to%20go." target="_blank" rel="noopener" aria-label="Order Grilled Cheese Sandwich on WhatsApp">Grilled Cheese Sandwich</a> <span>$4</span></li>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Chicken%20Club%20Sandwich%20to%20go." target="_blank" rel="noopener" aria-label="Order Chicken Club Sandwich on WhatsApp">Chicken Club Sandwich</a> <span>$5</span></li>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Paneer%20Wrap%20to%20go." target="_blank" rel="noopener" aria-label="Order Paneer Wrap on WhatsApp">Paneer Wrap</a> <span>$4.5</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <h3>
+            <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg>
+            Cakes & Desserts
+          </h3>
+          <ul>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Chocolate%20Brownie%20to%20go." target="_blank" rel="noopener" aria-label="Order Chocolate Brownie on WhatsApp">Chocolate Brownie</a> <span>$2.5</span></li>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Cheese%20Cake%20Slice%20to%20go." target="_blank" rel="noopener" aria-label="Order Cheese Cake Slice on WhatsApp">Cheese Cake Slice</a> <span>$4</span></li>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Blueberry%20Muffin%20to%20go." target="_blank" rel="noopener" aria-label="Order Blueberry Muffin on WhatsApp">Blueberry Muffin</a> <span>$2.5</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-card reveal">
+          <h3>
+            <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1.5 12a2 2 0 0 1-2 1.8h-5A2 2 0 0 1 7.5 20Z"/><path d="M5 8 4 3h16l-1 5"/><path d="M9 12v4"/></svg>
+            Juices
+          </h3>
+          <ul>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Fresh%20Orange%20Juice%20to%20go." target="_blank" rel="noopener" aria-label="Order Fresh Orange Juice on WhatsApp">Fresh Orange Juice</a> <span>$3</span></li>
+            <li><a class="menu-order" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20would%20like%20a%20Mango%20Shake%20to%20go." target="_blank" rel="noopener" aria-label="Order Mango Shake on WhatsApp">Mango Shake</a> <span>$3.5</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <h2 class="reveal">What Our Guests Say</h2>
+      <p class="section-subtitle reveal">Real words from students, workers, and families.</p>
+
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-card reveal">
+          <div class="stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p>"My favourite study spot! Free Wi-Fi, the Masala Chai is amazing, and it feels cozy, not expensive at all."</p>
+          <footer><strong>Priya S.</strong> - College Student</footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal">
+          <div class="stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p>"I grab a Cappuccino and a Grilled Cheese on my break. Friendly staff, quick service, and the WhatsApp ordering saves me time!"</p>
+          <footer><strong>Rahul M.</strong> - Office Worker</footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card reveal">
+          <div class="stars" role="img" aria-label="5 out of 5 stars">
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p>"We come every weekend with the kids. Brownies, Mango Shake, and such a warm, homey vibe. It’s our family place now."</p>
+          <footer><strong>Anita & Family</strong> - Weekend Regulars</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal reveal-left">
+        <h2 class="reveal">Visit Us</h2>
+        <p>Come say hi! We’re near City College, easy to find, easier to love.</p>
+
+        <ul class="contact-list">
+          <li>
+            <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><strong>Location:</strong> <a href="https://maps.google.com/?q=123+Market+Road+Near+City+College" target="_blank" rel="noopener">123 Market Road, Near City College</a></span>
+          </li>
+          <li>
+            <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span><strong>Hours:</strong> Mon - Sun, 8 AM to 9 PM</span>
+          </li>
+          <li>
+            <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span><strong>Phone / WhatsApp:</strong> <a href="tel:+123456789">+1 234 56789</a></span>
+          </li>
+          <li>
+            <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <span><strong>Instagram:</strong> <a href="https://instagram.com/brewandbean.cafe" target="_blank" rel="noopener">@brewandbean.cafe</a></span>
+          </li>
+        </ul>
+
+        <p class="menu-note">Want to order? Use the WhatsApp button below.</p>
+
+        <div class="contact-buttons">
+          <a href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Order on WhatsApp
+          </a>
+          <a href="tel:+123456789" class="btn btn-call">
+            <svg class="icon icon-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Us
+          </a>
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+        </div>
+      </div>
+
+      <div class="hours-card reveal reveal-right">
+        <h3>Opening Hours</h3>
+        <ul>
+          <li>Monday to Sunday <span>8 AM - 9 PM</span></li>
+        </ul>
+        <p class="open-now" id="openNow">Open Now: Come on in!</p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Back-to-top -->
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+  </button>
+
+  <!-- Mobile quick actions (bottom bar) -->
+  <div class="mobile-cta" id="mobileCta">
+    <a href="tel:+123456789" class="mobile-cta-btn mobile-cta-call">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call
+    </a>
+    <a href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener" class="mobile-cta-btn mobile-cta-wa">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <!-- Order tray: starts as a cart circle (badge), expands on click -->
+  <button class="tray-fab" id="trayFab" type="button" aria-label="Order tray" aria-expanded="false" aria-controls="tray" hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+    <span class="tray-fab-count" id="trayCount" hidden>0</span>
+  </button>
+  <div class="tray" id="tray" hidden>
+    <p class="tray-head">Your order</p>
+    <ul class="tray-list" id="trayList"></ul>
+    <div class="tray-footer">
+      <button class="tray-clear" id="trayClear" type="button" aria-label="Clear whole tray">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <p class="tray-total" id="trayTotal" aria-live="polite"></p>
+      <a class="btn btn-whatsapp tray-order" id="trayOrder" target="_blank" rel="noopener" href="#">Order on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Toast: small confirmation when a WhatsApp link opens -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg class="toast-icon" id="toastIconCheck" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+    <svg class="toast-icon" id="toastIconCup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+    <span id="toastText"></span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a class="footer-cup-hover" href="https://wa.me/123456789?text=Hi%20Brew%20%26%20Bean!%20I%20want%20to%20place%20an%20order." target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+      <svg class="footer-cup" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line class="steam s1" x1="6" x2="6" y1="2" y2="4"/>
+        <line class="steam s2" x1="10" x2="10" y1="2" y2="4"/>
+        <line class="steam s3" x1="14" x2="14" y1="2" y2="4"/>
+        <g class="cup-body">
+          <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+          <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+        </g>
+      </svg>
+    </a>
+    <p class="footer-brand">
+      Brew & Bean: Freshly brewed happiness, every morning
+    </p>
+    <p>123 Market Road, Near City College • <a href="https://instagram.com/brewandbean.cafe" target="_blank" rel="noopener">@brewandbean.cafe</a> • Open Daily 8 AM - 9 PM</p>
+    <p>&copy; <span id="year"></span> Brew & Bean. Made with care for our neighborhood.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
